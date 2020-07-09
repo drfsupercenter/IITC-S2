@@ -1,12 +1,12 @@
 // ==UserScript==
-// @id             level14and17cells
-// @name           IITC plugin: Show Level 14&17 S2 Cells
-// @author         blsmit5728
+// @id             L14and17
+// @name           IITC plugin: Show Level 14 and 17 S2 Cells
+// @author         drfsupercenter
 // @category       Layer
-// @version        1.1.0
-// @namespace      https://github.com/blsmit5728/level14and17S2IITC
-// @updateURL      https://raw.githubusercontent.com/blsmit5728/level14and17S2IITC/master/level14and17cells.user.js
-// @downloadURL    https://raw.githubusercontent.com/blsmit5728/level14and17S2IITC/master/level14and17cells.user.js
+// @version        1.0
+// @namespace      https://github.com/drfsupercenter/IITC-S2
+// @updateURL      https://raw.githubusercontent.com/drfsupercenter/IITC-S2/master/S2.js
+// @downloadURL    https://raw.githubusercontent.com/drfsupercenter/IITC-S2/master/S2.js
 // @description    IITC: Shows level 17 and Level 14 cells on the map
 // @include        https://*.ingress.com/intel*
 // @include        http://*.ingress.com/intel*
@@ -23,6 +23,8 @@
 //
 // original plugin at:
 // https://github.com/jonatkins/ingress-intel-total-conversion
+// DRF note: I took the original script from here: https://github.com/blsmit5728/level14and17S2IITC
+// and made some changes to it.  Simply re-hosting this on my own GitHub to make it easy for my friends to use.
 
 
 function wrapper(plugin_info) {
