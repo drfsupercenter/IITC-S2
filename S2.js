@@ -596,7 +596,7 @@ function wrapper(plugin_info) {
     //{
     //  drawCellAndNeighbors(cell18);
     //}
-    if (zoom >= 16) {  
+    if (zoom >= 17) {  
         // only draw 17's when we are close in
         drawCellAndNeighbors(cell17);            
     }
@@ -660,9 +660,9 @@ function wrapper(plugin_info) {
     // NOTE: we only draw two of the edges. as we draw all cells on screen, the other two edges will either be drawn
     // from the other cell, or be off screen so we don't care
     if (cell.level == 17)
-        var region = L.geodesicPolyline([corners[0],corners[1],corners[2]], {fill: false, color: color, opacity: 1.0, weight: 1, clickable: false });
+        var region = L.geodesicPolyline([corners[0],corners[1],corners[2]], {fill: false, color: color, opacity: 1.0, weight: 2, clickable: false });
     if (cell.level == 14)
-        var region = L.geodesicPolyline([corners[0],corners[1],corners[2]], {fill: false, color: color, opacity: 1.0, weight: 3, clickable: false });
+        var region = L.geodesicPolyline([corners[0],corners[1],corners[2]], {fill: false, color: color, opacity: 1.0, weight: 4, clickable: false });
 
     window.plugin.regions.regionLayer.addLayer(region);
 
